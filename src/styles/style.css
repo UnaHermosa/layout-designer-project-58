@@ -10,6 +10,7 @@
   --basic-dark: #42413c;
   --brown: #b09a81;
   --blue: #1085c5;
+  --background: url("../images/background.png");
 }
 
 @font-face {
@@ -31,17 +32,38 @@
 }
 
 .page {
+  box-sizing: border-box;
   max-width: 1110px;
   margin: 0 auto;
-  font-family: "Open Sans, Arial, sans-serif";
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6em;
   color: var(--dark);
 }
 
 .title {
+  margin: 0;
   font-family: Neucha, Pacifico, sans-serif;
   line-height: 1.2em;
+  font-weight: 400;
+  color: var(--basic-color);
+}
+
+.title-selection {
+  color: var(--dark);
+}
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  padding: 12px 24px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: var(--basic-color);
+  color: var(--main-color);
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .h1-72 {
@@ -57,5 +79,54 @@
 }
 
 .ptb-100 {
-  padding: 100px 0;
+  padding: 107px 0;
+}
+
+.page-header {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.page-header::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--background);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.page-title {
+  margin-bottom: 193px;
+}
+
+.page-header-img {
+  position: absolute;
+  top: 55px;
+  right: -270px;
+  height: 525px;
+}
+
+.page-header-wrapper {
+  column-count: 2;
+  margin-bottom: 40px;
+}
+
+.page-header-text {
+  margin: 0;
+}
+
+.page-header-text:not(:last-of-type) {
+  margin-bottom: 13px;
+}
+
+.page-header-button {
+  width: 148px;
+  margin-left: 50%;
+  transform: translateX(15px);
 }
