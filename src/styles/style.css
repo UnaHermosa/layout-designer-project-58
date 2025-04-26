@@ -1,7 +1,61 @@
 /** CSS STYLE **/
 
-.hello {
-  display: block;
+:root {
+  --main-color: #fff;
+  --transparent-light: #d7ccc0;
+  --transparent-dark: #908d8b;
+  --light: #f5f4f0;
+  --dark: #2a2626;
+  --basic-color: #fe8a02;
+  --basic-dark: #42413c;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
 
-  color: #fff;
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Neucha;
+  src: url("../fonts/Neucha-Regular.ttf");
+  font-weight: 400;
+}
+
+.page {
+  max-width: 1110px;
+  margin: 0 auto;
+  font-family: "Open Sans, Arial, sans-serif";
+  font-size: 16px;
+  line-height: 1.6em;
+  color: var(--dark);
+}
+
+.title {
+  font-family: Neucha, Pacifico, sans-serif;
+  line-height: 1.2em;
+}
+
+.h1-72 {
+  font-size: 72px;
+}
+
+.h2-60 {
+  font-size: 60px;
+}
+
+.h3-34 {
+  font-size: 34px;
+}
+
+.ptb-100 {
+  padding: 100px 0;
 }
