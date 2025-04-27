@@ -7,6 +7,7 @@
   --light: #f5f4f0;
   --dark: #2a2626;
   --basic-color: #fe8a02;
+  --button-hover-color: #ea7600;
   --basic-dark: #42413c;
   --brown: #b09a81;
   --blue: #1085c5;
@@ -31,9 +32,33 @@
   font-weight: 400;
 }
 
+.h1-72 {
+  font-size: 72px;
+}
+
+.h2-60 {
+  font-size: 60px;
+}
+
+.h3-34 {
+  font-size: 34px;
+}
+
+.ptb-100 {
+  padding: 107px 0;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.ta-c {
+  text-align: center;
+}
+
 .page {
   box-sizing: border-box;
-  max-width: 1110px;
+  max-width: 1440px;
   margin: 0 auto;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
@@ -53,6 +78,10 @@
   color: var(--dark);
 }
 
+.title-selection-light {
+  color:var(--main-color);
+}
+
 .button {
   display: block;
   box-sizing: border-box;
@@ -63,6 +92,14 @@
   color: var(--main-color);
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.button:hover {
+  background: var(--button-hover-color);
+}
+
+.content {
+  padding: 0 165px;
 }
 
 .page-header {
@@ -133,30 +170,61 @@
   transform: translateX(-50%);
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
+
 .navigation {
+  padding-top: 200px;
   background: var(--basic-dark);
 }
 
-.h1-72 {
-  font-size: 72px;
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  width: 100%;
 }
 
-.h2-60 {
-  font-size: 60px;
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.h3-34 {
-  font-size: 34px;
+.list-item {
+  box-sizing: border-box;
+  width: 350px;
+  padding: 24px;
+  background-color: var(--light);
 }
 
-.ptb-100 {
-  padding: 107px 0;
+.list-item-dark {
+  padding: 0;
+  background: var(--basic-dark);
 }
 
-.mb-30 {
-  margin-bottom: 30px;
+.navigation-title {
+  font-size: 52px;
 }
 
-.ta-c {
-  text-align: center;
+.list-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.list-title {
+  margin-bottom: 16px;
+}
+
+.list-item-number {
+  display: inline-block;
+  margin-bottom: 40px;
+  font-family: Neucha, Pacifico, sans-serif;
+  font-size: 64px;
+  line-height: 1;
+}
+
+.list-description {
+  margin: 0;
 }
