@@ -235,6 +235,7 @@
 .article {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .article::before {
@@ -286,7 +287,7 @@
 }
 
 .article-text {
-  flex-basis: 50%;
+  flex-basis: 48.5%;
   margin: 0;
 }
 
@@ -323,6 +324,12 @@
 .article-description-wrapper {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
+
+.article-text-nested {
+  display: block;
+  margin-bottom: 15px;
 }
 
