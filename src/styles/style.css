@@ -83,6 +83,7 @@
 }
 
 .button {
+  position: relative;
   display: block;
   box-sizing: border-box;
   padding: 12px 24px;
@@ -333,3 +334,30 @@
   margin-bottom: 15px;
 }
 
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-form-input {
+  box-sizing: border-box;
+  padding: 15px;
+  height: 50px;
+}
+
+.subscribe-form-button {
+  width: 70px;
+  height: 50px;
+  border: none;
+}
+
+.subscribe-form-button::before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/send.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
