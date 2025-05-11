@@ -403,7 +403,7 @@
 
 .subscribe-form-input::placeholder {
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 13.1;
+  font-size: 13.1px;
   line-height: 1.6;
   color: var(--placeholder);
   opacity: 0.2;
