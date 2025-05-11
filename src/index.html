@@ -282,27 +282,29 @@
   </main>
   <footer class="page-footer ptb-100">
     <div class="content">
-      <div class="subsribe">
-        <form class="subscribe-form" action="#">
-          <legend class="subscribe-form-title">
+      <div class="subscribe">
+        <p class="subscribe-title">
             Хотите узнать больше? Подпишитесь на обновления
-          </legend>
-          <label for="email">Электронная почта</label>
-          <input  class="subscribe-form-input" type="email" id="email" name="email" placeholder="Ваша электронная почта">
-          <button class="subscribe-form-button button" type="submit" aria-label="Подписаться"></button>
-        </form>
-        <p class="subscribe-text">
-          Подписываясь, вы принимаете
+        </p>
+        <form class="subscribe-form" action="#">
+          <label class="subscribe-form-label" for="email">Электронная почта</label>
+          <div class="subscribe-form-wrapper">
+            <input class="subscribe-form-input" type="email" id="email" name="email" placeholder="Ваша электронная почта">
+            <button class="button" type="submit" aria-label="Подписаться"></button>
+          </div>
+          <p class="subscribe-text">
+            Подписываясь, вы принимаете
           <a href="#" class="subscribe-link link">правила сервиса</a>
         </p>
+        </form>
       </div>
       <div class="contacts">
         <p class="contacts-text">&copy; Елена Кравчишина</p>
         <p class="contacts-text">
           По материалам статьи
-          <a href="#" class="contacts-link link">Yash Ranadive Cognitive Biases in Programming</a>
+          <a href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b" class="contacts-link link">Yash Ranadive Cognitive Biases in Programming</a>
         </p>
-        <a href="#" class="contacts-link link">Курсы программирования Hexlet</a>
+        <a href="https://ru.hexlet.io/" class="contacts-link link">Курсы программирования Hexlet</a>
       </div>
     </div>
   </footer>
