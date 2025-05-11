@@ -175,7 +175,7 @@
 .promo-poster {
   position: absolute;
   display: block;
-  top: 325px;
+  top: 320px;
   left: 50%;
   transform: translateX(-50%);
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
@@ -397,6 +397,7 @@
 }
 
 .subscribe-text {
+  margin: 0;
   font-size: 12px;
   color: var(--main-color);
 }
