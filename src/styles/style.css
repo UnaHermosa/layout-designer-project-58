@@ -63,11 +63,11 @@
 }
 
 .ptb-100 {
-  padding: 100px 0;
+  padding: 106px 0;
 }
 
 .mb-30 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .ta-c {
@@ -98,19 +98,6 @@
   text-transform: uppercase;
   border: none;
   cursor: pointer;
-}
-
-.button::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/send.svg");
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  top: 0;
-  left: 0;
 }
 
 .button:hover {
@@ -153,7 +140,7 @@
 .page-header-img {
   position: absolute;
   top: 55px;
-  right: -270px;
+  right: -105px;
   height: 525px;
 }
 
@@ -188,7 +175,7 @@
 .promo-poster {
   position: absolute;
   display: block;
-  top: 330px;
+  top: 325px;
   left: 50%;
   transform: translateX(-50%);
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
@@ -416,6 +403,19 @@
 
 .subscribe-link {
   color: var(--main-color);
+}
+
+.subscribe-button::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/send.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  left: 0;
 }
 
 .contacts {
